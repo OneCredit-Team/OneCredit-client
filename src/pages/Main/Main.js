@@ -15,7 +15,7 @@ export default function Main() {
           <div className="main-store">
             <p className="main-store-top">
               <a>소마고 강당</a>
-              <a className="main-store-top-icon" onClick={()=> setModalIsOpen(true)}><IoIosArrowDown/></a>
+              <a className="main-store-top-icon" onClick={()=> setModalIsOpen(true)} ><IoIosArrowDown/></a>
             </p>
             <p className="main-store-bottom">부산광역시 강서구 가락대로 1393</p>
             <p className="main-store-bottom2">
