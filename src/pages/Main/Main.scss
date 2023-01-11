@@ -1,0 +1,69 @@
+@import "../../shared/theme.scss";
+@import "../../shared/global.style.scss";
+
+.main-tit-background {
+    background-image: url('../../../public/img/main-background.png');
+    height: 100vh;
+    position: relative;
+    color: white;
+    width: 100vw;
+        .main-tit {
+            width: 1000px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 80px;
+            .main-store {
+                .main-store-top {
+                    font-family: 'PretendardSemiBold';
+                    font-size: 55px;
+                }
+    
+                .main-store-bottom {
+                    padding-top: 5px;
+                    font-family: 'PretendardMedium';
+                    font-style: none;
+                    font-size: 14px;
+                    font-weight: 100;
+                    opacity: 60%;
+                }
+                .main-store-bottom2 {
+                    word-break: initial;
+                    padding-top: 35px;
+                    line-height: 25px;
+                    font-family: 'PretendardMedium';
+                    font-style: normal;
+                    font-size: 18px;
+                    font-weight: 100;
+                }
+            }
+    
+            .main-percent {
+                font-family: 'PretendardSemiBold';
+                font-style: normal;
+                padding: 10px;
+                .main-percent-top {
+                    font-size: 70px;
+                    font-weight: 500;
+                    .percent-front-num{
+                        position: relative;
+                        bottom: 25px;
+                    }
+                    .precent-slash{
+                    }
+                    .percent-back-num{
+                        position: relative;
+                        top: 25px;
+                    }
+                }
+    
+                .main-percent-bottom {
+                    font-size: 25px;
+                    padding-left: 23px;
+                    position: relative;
+                    top: 25px;
+                }
+            }
+        }
+    }
