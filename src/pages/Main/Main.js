@@ -5,8 +5,10 @@ export default function Main() {
             <div className='main-tit-background'>
                 <div className='main-tit'>
                     <div className='main-store'>
-                        <p className='main-store-top'>우리동네 스타벅스</p>
-                        <p className='main-store-bottom'>부산 부산진구 가야대로 462-1</p>
+                        <p className='main-store-top'>소마고 강당</p>
+                        <p className='main-store-bottom'>부산광역시 강서구 가락대로 1393</p>
+                        <p className='main-store-bottom2'>34명 중 24명이 소마고 강당을 이용중이에요.<br />
+                            아직 14명이 더 올 수 있어요.</p>
                     </div>
                     <div className='main-percent'>
                         <a className='main-percent-top'>
