@@ -12,7 +12,7 @@ function Graph() {
       .attr("viewBox", "0 0 1200 304")
       .attr("width", 1000)
       .attr("style", "padding-top: 50px");
-    const xFunc = (_, index) => index * 110; // 곱하기는 간격 더하기로 위치를 조정
+    const xFunc = (_, index) => index * 100 + 20; // 곱하기는 간격 더하기로 위치를 조정
     const yFunc = (data) => 304 - data;
 
     const drawLineChartGenerator = d3.line().x(xFunc).y(yFunc);
@@ -33,6 +33,17 @@ function Graph() {
       .ease(d3.easeSin)
       .duration(1000)
       .attr("stroke-dashoffset", 2);
+
+    data.forEach((element, index) => {
+      svg
+        .append("text")
+        .text(element)
+        .attr("class", "data")
+        .attr("style", "font-weight: 500; font-size: 28px; font-style: normal;")
+        .attr("fill", "rgba(255, 255, 255, 0.3)")
+        .attr("x", index * 100)
+        .attr("y", 260 - element);
+    });
   }, []);
 
   return <div ref={canvasRef} />;
