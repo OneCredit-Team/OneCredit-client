@@ -1,0 +1,58 @@
+@import "../../shared/theme.scss";
+@import "../../shared/global.style.scss";
+
+.main-tit-background {
+    background-image: url('../../../public/img/main-background.png');
+    height: 100vh;
+    color: white;
+
+    .main-tit {
+        flex-wrap: wrap;
+        padding: 10px 100px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 100px;
+        .main-store {
+            .main-store-top {
+                font-family: 'PretendardSemiBold';
+                font-size: 50px;
+            }
+
+            .main-store-bottom {
+                padding-top: 10px;
+                font-family: 'PretendardMedium';
+                font-style: normal;
+                font-weight: 100;
+                opacity: 60%;
+            }
+        }
+
+        .main-percent {
+            font-family: 'PretendardSemiBold';
+            font-style: normal;
+            padding: 10px;
+            .main-percent-top {
+                font-size: 70px;
+                font-weight: 500;
+                .percent-front-num{
+                    position: relative;
+                    bottom: 20px;
+                }
+                .precent-slash{
+                }
+                .percent-back-num{
+                    position: relative;
+                    top: 20px;
+                }
+            }
+
+            .main-percent-bottom {
+                font-size: 25px;
+                padding-left: 20px;
+                position: relative;
+                top: 20px;
+            }
+        }
+    }
+}
