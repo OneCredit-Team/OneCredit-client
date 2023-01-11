@@ -14,7 +14,7 @@ function GraphBar() {
       <li className="graph-text">14</li>
       <li className="graph-text">15</li>
       <li className="graph-text">17</li>
-      <li className="graph-text">18</li>
+      <li className="graph-text">18(시)</li>
     </div>
   );
 }
