@@ -1,0 +1,24 @@
+@import '../../shared/theme.scss';
+
+.placebox-tit {
+    background-color: rgba(208, 202, 231, 0.7);
+    width: 14vw;
+    padding: 13px;
+    border-radius: 20px;
+}
+.place-name-div {
+    padding: 3px;
+    display: inline-block;  
+
+    .place-name{
+        font-size: 13px;
+        border-radius: 200px;
+        color: $black;
+        background-color: #C6BFE0;
+        padding: 5px 12px;
+        &:hover{
+            cursor: pointer;
+            background-color: #beb5e0;
+        }
+    }
+}
