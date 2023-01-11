@@ -1,4 +1,5 @@
 import Graph from "../../components/Graph";
+import GraphBar from "../../components/GraphBar";
 import "./Main.scss";
 export default function Main() {
   return (
@@ -25,6 +26,7 @@ export default function Main() {
           </div>
         </div>
         <Graph />
+        <GraphBar />
       </div>
     </>
   );
