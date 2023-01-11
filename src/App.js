@@ -1,12 +1,7 @@
 import "./shared/global.style.scss";
-import Graph from "./components/Graph/index";
 
 function App() {
-  return (
-    <div>
-      <Graph />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
