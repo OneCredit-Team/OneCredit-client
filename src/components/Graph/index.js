@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import * as d3 from "d3";
-import "./style.scss";
 
 function Graph() {
   const canvasRef = useRef();
@@ -10,8 +9,9 @@ function Graph() {
     const canvas = d3.select(canvasRef.current);
     const svg = canvas
       .append("svg")
-      .attr("viewBox", "0 0 1400 304")
-      .attr("style", "background-color: #000");
+      .attr("viewBox", "0 0 1200 304")
+      .attr("width", 1000)
+      .attr("style", "padding-top: 50px");
     const xFunc = (_, index) => index * 110; // 곱하기는 간격 더하기로 위치를 조정
     const yFunc = (data) => 304 - data;
 

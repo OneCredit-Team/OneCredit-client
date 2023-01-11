@@ -2,6 +2,10 @@
 @import "../../shared/global.style.scss";
 
 .main-tit-background {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url('../../../public/img/main-background.png');
     height: 100vh;
     position: relative;
@@ -13,7 +17,8 @@
             flex-wrap: wrap;
             display: flex;
             justify-content: space-between;
-            padding-top: 80px;
+            align-items: center;
+            padding-top: 130px;
             .main-store {
                 .main-store-top {
                     font-family: 'PretendardSemiBold';

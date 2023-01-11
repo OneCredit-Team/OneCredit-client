@@ -1,0 +1,15 @@
+.graph-bar {
+    display: flex;
+    width: 1100px;
+    height: 49px;
+    padding-top: 30px;
+    .graph-text {
+        width: 106px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.3);
+        font-weight: 500;
+        font-size: 36px;
+        font-style: normal;
+        margin: 0px 10px;
+    }
+}
