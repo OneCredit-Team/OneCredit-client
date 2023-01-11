@@ -10,11 +10,10 @@ function Graph() {
     const canvas = d3.select(canvasRef.current);
     const svg = canvas
       .append("svg")
-      .attr("width", 1500)
-      .attr("height", 304)
+      .attr("viewBox", "0 0 1400 304")
       .attr("style", "background-color: #000");
-    const xFunc = (data, index) => index * 125 + 50;
-    const yFunc = (data) => 220 - data;
+    const xFunc = (_, index) => index * 110; // 곱하기는 간격 더하기로 위치를 조정
+    const yFunc = (data) => 304 - data;
 
     const drawLineChartGenerator = d3.line().x(xFunc).y(yFunc);
 
