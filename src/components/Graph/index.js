@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import * as d3 from "d3";
+import "./style.scss";
 
 function Graph() {
   const canvasRef = useRef();
