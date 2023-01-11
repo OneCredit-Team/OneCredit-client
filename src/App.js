@@ -1,3 +1,5 @@
+import "./shared/global.style.scss";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from './pages/Main/Main';
 function App() {
