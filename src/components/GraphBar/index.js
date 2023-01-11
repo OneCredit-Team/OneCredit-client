@@ -1,20 +1,28 @@
 import "./style.scss";
 
 function GraphBar() {
+  const data = [
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "17",
+    "18",
+  ];
   return (
     <div className="graph-bar">
-      <li className="graph-text">06</li>
-      <li className="graph-text">07</li>
-      <li className="graph-text">08</li>
-      <li className="graph-text">09</li>
-      <li className="graph-text">10</li>
-      <li className="graph-text">11</li>
-      <li className="graph-text">12</li>
-      <li className="graph-text">13</li>
-      <li className="graph-text">14</li>
-      <li className="graph-text">15</li>
-      <li className="graph-text">17</li>
-      <li className="graph-text">18(시)</li>
+      {data.map((element, index) => {
+        if (index === data.length - 1) {
+          return <li className="graph-text">{element}(시)</li>;
+        }
+        return <li className="graph-text">{element}</li>;
+      })}
     </div>
   );
 }

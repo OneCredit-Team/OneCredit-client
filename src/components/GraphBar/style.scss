@@ -11,5 +11,9 @@
         font-size: 36px;
         font-style: normal;
         margin: 0px 10px;
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
     }
 }
