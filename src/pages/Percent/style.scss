@@ -9,7 +9,6 @@
     background-image: url('../../../public/img/main-background.png');
     height: 100vh;
     position: relative;
-    color: #E1D9F8;
     width: 100vw;
     align-items: center;
     .percent-tit {
@@ -18,12 +17,13 @@
         position: relative;
         top: 140px;
         .percent-tit-left {
-            width: 50vw;
+            width: 45vw;
             margin: 0 auto;
             flex-wrap: wrap;
 
             .percent-store {
                 .percent-store-top {
+                    color: #F5F3FD;
                     font-family: 'PretendardSemiBold';
                     font-size: 65px;
 
@@ -40,30 +40,32 @@
                 }
 
                 .percent-store-bottom {
+                    color: white;
                     padding-top: 5px;
                     font-family: 'PretendardMedium';
                     font-style: none;
-                    font-size: 15px;
+                    font-size: 16px;
                     font-weight: 100;
                     opacity: 60%;
                 }
 
                 .percent-store-bottom2 {
+                    color: #E7E2F9;
                     word-break: initial;
                     padding-top: 35px;
                     line-height: 25px;
                     font-family: 'PretendardMedium';
                     font-style: normal;
-                    font-size: 20px;
+                    font-size: 22px;
                     font-weight: 100;
                 }
 
                 .percent-store-solution {
                     padding-top: 10px;
-                    font-size: 15px;
+                    font-size: 13px;
                     font-weight: 1;
                     text-decoration: underline;
-                    color: #E1D9F8;
+                    color: white;
                     opacity: 75%;
 
                 }
@@ -74,14 +76,13 @@
             }
 
             .percent-percent {
-                font-family: 'PretendardSemiBold';
                 font-style: normal;
                 position: relative;
                 top: 90px;
-
+                color: #E7E2F9;
                 .percent-percent-top {
+                    font-family: 'PretendardBold';
                     font-size: 90px;
-                    font-weight: 500;
 
                     .percent-front-num {}
 
@@ -91,6 +92,7 @@
                 }
 
                 .percent-percent-bottom {
+                    font-family: 'PretendardSemiBold';
                     font-size: 30px;
                     padding-left: 23px;
                 }
@@ -99,9 +101,9 @@
         .percent-tit-right{
             .percent-right-img{
                 position: relative;
-                top: 60px;
+                top: 40px;
                 img{
-                
+                    width: 23vw;
                 }
             }
         }

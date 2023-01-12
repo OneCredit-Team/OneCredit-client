@@ -22,7 +22,6 @@ export default function GraphPage() {
               <p className="percent-store-bottom">{PlacepercentData.address}</p>
               <p className="percent-store-bottom2">
                 <p>{PlacepercentData.user}</p>
-
                 <p>{PlacepercentData.vacancy}</p>
               </p>
               <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="Modal">
