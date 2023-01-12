@@ -1,7 +1,7 @@
 import "./style.scss";
 import { useState } from "react";
 import { RiArrowLeftSLine } from "react-icons/ri";
-
+import { useNavigate } from "react-router-dom";
 const Inputs = ({ name, setValue, value, described }) => {
   return (
     <>
@@ -34,7 +34,7 @@ const names = [
 ];
 
 function AddPlace({ navigation }) {
-  //   const navigate
+     const navigate = useNavigate();
   const [pageIndex, setPageIndex] = useState(0);
   const [form, setForm] = useState(initForm);
   console.log("form : ", form);
@@ -44,9 +44,14 @@ function AddPlace({ navigation }) {
       <div className="add-tit">
         <div className="back-button">
           <button onClick={() =>{
-            setPageIndex((s)=> s-1)
+            if(pageIndex === 0){
+                navigate(-1);
+            }
+            else{
+                setPageIndex((s)=> s-1)
+            }
           }}>
-            <RiArrowLeftSLine onClick={() => navigation.navigate(-1)} />
+            <RiArrowLeftSLine/>
             돌아가기
           </button>
         </div>
