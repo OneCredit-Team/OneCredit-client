@@ -1,7 +1,8 @@
 import "./style.scss";
 import { useState } from "react";
-import {RiArrowLeftSLine} from "react-icons/ri";
-const Inputs = ({ name, setValue, value,described }) => {
+import { RiArrowLeftSLine } from "react-icons/ri";
+
+const Inputs = ({ name, setValue, value, described }) => {
   return (
     <>
       <div className="add-top">
@@ -19,17 +20,21 @@ const Inputs = ({ name, setValue, value,described }) => {
     </>
   );
 };
+
 const initForm = {
   place: "",
   address: "",
   maximum: "",
 };
+
 const names = [
   { key: "place", label: "장소", desc: "장소 이름 입력" },
   { key: "address", label: "주소", desc: "도로명 주소 입력" },
   { key: "maximum", label: "최대수용인원", desc: "최대 수용인원 입력" },
 ];
-function AddPlace() {
+
+function AddPlace({ navigation }) {
+  //   const navigate
   const [pageIndex, setPageIndex] = useState(0);
   const [form, setForm] = useState(initForm);
   console.log("form : ", form);
@@ -38,9 +43,12 @@ function AddPlace() {
     <div className="add-page">
       <div className="add-tit">
         <div className="back-button">
-            <button>
-                <RiArrowLeftSLine/>돌아가기
-            </button>
+          <button onClick={() =>{
+            setPageIndex((s)=> s-1)
+          }}>
+            <RiArrowLeftSLine onClick={() => navigation.navigate(-1)} />
+            돌아가기
+          </button>
         </div>
         <Inputs
           name={names[pageIndex].label}
