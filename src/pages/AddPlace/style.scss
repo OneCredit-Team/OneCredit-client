@@ -6,6 +6,15 @@
     padding: 0rem 12rem;
     padding-top: 10rem;
     .add-tit{
+        .back-button{
+            position: relative;
+            bottom: 40px;
+            button{
+                color: white;
+                opacity: 30%;
+                font-size: 20px;
+            }
+        }
         .add-bottom-button{
             position: relative;
             top: 90px;
@@ -21,9 +30,14 @@
 }
 
 .add-top{
-    p{
+    .add{
         color: white;
         font-size: 60px;
+    }
+    .described{
+        font-size: 15px;
+        color: white;
+        opacity: 30%;
     }
 }
 .add-bottom{

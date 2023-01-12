@@ -1,15 +1,17 @@
 import "./style.scss";
 import { useState } from "react";
-
-const Inputs = ({ name, setValue }) => {
+import {RiArrowLeftSLine} from "react-icons/ri";
+const Inputs = ({ name, setValue, value,described }) => {
   return (
     <>
       <div className="add-top">
-        <p>{name} 추가</p>
+        <p className="add">{name} 추가</p>
+        <p className="described">{described}</p>
       </div>
       <div className="add-bottom">
         <input
           type="text"
+          value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder={`${name}를 입력해주세요.`}
         />
@@ -23,20 +25,27 @@ const initForm = {
   maximum: "",
 };
 const names = [
-  { key: "place", label: "장소" },
-  { key: "address", label: "주소" },
-  { key: "maximum", label: "최대수용인원" },
+  { key: "place", label: "장소", desc: "장소 이름 입력" },
+  { key: "address", label: "주소", desc: "도로명 주소 입력" },
+  { key: "maximum", label: "최대수용인원", desc: "최대 수용인원 입력" },
 ];
 function AddPlace() {
   const [pageIndex, setPageIndex] = useState(0);
-  const [form, setForm] = useState();
+  const [form, setForm] = useState(initForm);
   console.log("form : ", form);
 
   return (
     <div className="add-page">
       <div className="add-tit">
+        <div className="back-button">
+            <button>
+                <RiArrowLeftSLine/>돌아가기
+            </button>
+        </div>
         <Inputs
           name={names[pageIndex].label}
+          described={names[pageIndex].desc}
+          value={form[names[pageIndex].key]}
           setValue={(v) => {
             setForm((s) => {
               return {
