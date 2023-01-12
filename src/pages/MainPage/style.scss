@@ -1,0 +1,37 @@
+.main-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0rem 10rem;
+    .main-content {
+        .main-tit {
+            color: #F5F3FD;
+            font-family: 'PretendardSemiBold';
+            font-size: 65px;
+        }
+        .sub-tit {
+            font-size: 16px;
+            font-family: "PretendardMedium";
+            color: #fff;
+            opacity: 60%;
+            font-weight: 100;
+            line-height: 145%;
+            margin-top: 100px;
+        }
+        .main-btn {
+            width: 263px;
+            height: 88px;
+            padding: 24px 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+
+            font-weight: 600;
+            font-size: 40px;
+            color: #fff;
+            line-height: 100%;
+            margin-top: 100px;
+        }
+    }
+}
