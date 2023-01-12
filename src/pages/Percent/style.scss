@@ -9,14 +9,13 @@
     height: 100vh;
     position: relative;
     width: 100vw;
-    align-items: center;
 
     .percent-tit {
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
-        top: 110px;
+        top: 90px;
 
         .percent-tit-left {
             width: 45vw;
@@ -125,7 +124,7 @@
 
     .arrow-box {
         position: absolute;
-        bottom: 4.875rem;
+        bottom: 3.5rem;
         .arrow-btn {
             width: 100%;
             height: 100%;
