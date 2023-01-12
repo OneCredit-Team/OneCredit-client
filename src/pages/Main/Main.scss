@@ -6,11 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../../../public/img/main-background.png');
     height: 100vh;
-    position: relative;
+    border-bottom: 1px solid black;
     color: white;
     width: 100vw;
+    // background-image: url('../../../public/img/round.png');
         .main-tit {
             width: 1000px;
             margin: 0 auto;
@@ -78,6 +78,10 @@
                     position: relative;
                     top: 25px;
                 }
+            }
+            .graph {
+                position: absolute;
+                top: 150px;
             }
         }
     }

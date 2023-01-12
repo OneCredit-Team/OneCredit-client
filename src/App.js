@@ -1,17 +1,18 @@
 import "./shared/global.style.scss";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from './pages/Main/Main';
+import Main from "./pages/Main/Main";
+import Background from "./components/Background";
 function App() {
   return (
-    <div className="App">
+    <Background>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
         </Routes>
       </BrowserRouter>
-    </div>
-  )
+    </Background>
+  );
 }
 
 export default App;

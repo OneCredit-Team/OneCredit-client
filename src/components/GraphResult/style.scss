@@ -1,0 +1,25 @@
+.graph-result-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    .graph-result-content {
+        .graph-text-bundle {
+            display: flex;
+            align-items: flex-end;
+            .graph-tit {
+                font-size: 55px;
+                padding-right: 4px;
+            }
+            .graph-sub-tit {
+                font-family: 'PretendardMedium';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}
