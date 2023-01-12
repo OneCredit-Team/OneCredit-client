@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GraphPage from "./pages/Percent";
 import Background from "./components/Background";
 import MainPage from "./pages/MainPage";
+
 function App() {
   return (
     <Background>
