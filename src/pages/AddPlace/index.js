@@ -1,5 +1,4 @@
 import "./style.scss";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Inputs = ({ name, setValue }) => {
@@ -32,7 +31,7 @@ function AddPlace() {
   const [pageIndex, setPageIndex] = useState(0);
   const [form, setForm] = useState();
   console.log("form : ", form);
-  
+
   return (
     <div className="add-page">
       <div className="add-tit">
