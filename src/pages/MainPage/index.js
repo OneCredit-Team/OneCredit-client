@@ -1,6 +1,7 @@
 import "./style.scss";
+import { Link } from "react-router-dom";
 
-function MainPage() {
+function MainPage({ navigation }) {
   return (
     <div className="main-page">
       <div className="main-content">
@@ -16,7 +17,9 @@ function MainPage() {
           <br />
           아니라, 앞으로의 예측 혼잡도도 알 수 있어요!
         </div>
-        <button className="main-btn">바로 써보기</button>
+        <Link className="main-btn" to="/graph">
+          바로 써보기
+        </Link>
       </div>
       <img src="/img/happy.svg" className="happy-img" />
     </div>
