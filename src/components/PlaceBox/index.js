@@ -1,6 +1,5 @@
 import './style.scss';
 import PlaceData from "./place.json";
-import {BsPlusLg} from "react-icons/bs";
 export default function PlaceBox(){
     return(
         <>

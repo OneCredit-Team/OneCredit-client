@@ -1,0 +1,127 @@
+@import "../../shared/theme.scss";
+@import "../../shared/global.style.scss";
+
+.percent-tit-background {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../../public/img/main-background.png');
+    height: 100vh;
+    position: relative;
+    color: #E1D9F8;
+    width: 100vw;
+    align-items: center;
+    .percent-tit {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 140px;
+        .percent-tit-left {
+            width: 50vw;
+            margin: 0 auto;
+            flex-wrap: wrap;
+
+            .percent-store {
+                .percent-store-top {
+                    font-family: 'PretendardSemiBold';
+                    font-size: 65px;
+
+                    .percent-store-top-icon {
+                        position: relative;
+                        top: 10px;
+                        left: 5px;
+                        opacity: 40%;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .percent-store-bottom {
+                    padding-top: 5px;
+                    font-family: 'PretendardMedium';
+                    font-style: none;
+                    font-size: 15px;
+                    font-weight: 100;
+                    opacity: 60%;
+                }
+
+                .percent-store-bottom2 {
+                    word-break: initial;
+                    padding-top: 35px;
+                    line-height: 25px;
+                    font-family: 'PretendardMedium';
+                    font-style: normal;
+                    font-size: 20px;
+                    font-weight: 100;
+                }
+
+                .percent-store-solution {
+                    padding-top: 10px;
+                    font-size: 15px;
+                    font-weight: 1;
+                    text-decoration: underline;
+                    color: #E1D9F8;
+                    opacity: 75%;
+
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .percent-percent {
+                font-family: 'PretendardSemiBold';
+                font-style: normal;
+                position: relative;
+                top: 90px;
+
+                .percent-percent-top {
+                    font-size: 90px;
+                    font-weight: 500;
+
+                    .percent-front-num {}
+
+                    .precent-slash {}
+
+                    .percent-back-num {}
+                }
+
+                .percent-percent-bottom {
+                    font-size: 30px;
+                    padding-left: 23px;
+                }
+            }
+        }
+        .percent-tit-right{
+            .percent-right-img{
+                position: relative;
+                top: 60px;
+                img{
+                
+                }
+            }
+        }
+    }
+}
+
+
+
+.ReactModalPortal .ReactModal__Overlay {
+    background: transparent !important;
+    width: 100vw;
+}
+
+.placebox-tit {
+    position: relative;
+    top: 200px;
+    left: 380px;
+}
+
+
+.Modal {
+    outline: none;
+}
