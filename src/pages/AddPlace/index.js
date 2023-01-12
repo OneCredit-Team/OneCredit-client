@@ -1,7 +1,7 @@
 import "./style.scss";
 import { useState } from "react";
 
-const Inputs = ({ name, setValue }) => {
+const Inputs = ({ name, setValue, value }) => {
   return (
     <>
       <div className="add-top">
@@ -10,6 +10,7 @@ const Inputs = ({ name, setValue }) => {
       <div className="add-bottom">
         <input
           type="text"
+          value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder={`${name}를 입력해주세요.`}
         />
@@ -29,7 +30,7 @@ const names = [
 ];
 function AddPlace() {
   const [pageIndex, setPageIndex] = useState(0);
-  const [form, setForm] = useState();
+  const [form, setForm] = useState(initForm);
   console.log("form : ", form);
 
   return (
@@ -37,6 +38,7 @@ function AddPlace() {
       <div className="add-tit">
         <Inputs
           name={names[pageIndex].label}
+          value={form[names[pageIndex].key]}
           setValue={(v) => {
             setForm((s) => {
               return {
