@@ -76,7 +76,15 @@ export default function GraphPage() {
         </div>
         {/* arrow */}
         <div className="arrow-box">
-          <button className="arrow-btn">
+          <button
+            className="arrow-btn"
+            onClick={() => {
+              window.scrollTo({
+                top: 9999,
+                behavior: "smooth",
+              });
+            }}
+          >
             <img src="/img/arrow.svg" className="arrow-img" />
           </button>
         </div>
