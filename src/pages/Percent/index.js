@@ -8,6 +8,8 @@ import Modal from 'react-modal';
 import React, { useState } from 'react';
 export default function GraphPage() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const moreuser = PlacepercentData.totaluser - PlacepercentData.useuser;
   return (
     <>
       <div className="percent-tit-background">
@@ -21,8 +23,8 @@ export default function GraphPage() {
               </p>
               <p className="percent-store-bottom">{PlacepercentData.address}</p>
               <p className="percent-store-bottom2">
-                <p>{PlacepercentData.user}</p>
-                <p>{PlacepercentData.vacancy}</p>
+                <p>{PlacepercentData.totaluser}명 중 {PlacepercentData.useuser}명이 {PlacepercentData.placename}을 이용중입니다.</p>
+                <p>아직 {moreuser}명이 더 올 수 있습니다.</p>
               </p>
               <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="Modal">
                 <div className="placebox-box"><PlaceBox /></div>
