@@ -1,5 +1,5 @@
 import "./shared/global.style.scss";
-
+import AddPlace from "./pages/AddPlace";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GraphPage from "./pages/Percent";
 import Background from "./components/Background";
@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/graph" element={<GraphPage />} />
+          <Route path="/addplace" element={<AddPlace />} />
         </Routes>
       </BrowserRouter>
     </Background>
