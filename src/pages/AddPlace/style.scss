@@ -1,0 +1,29 @@
+.add-page{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 0rem 12rem;
+    padding-top: 10rem;
+    .add-tit{
+        
+        .add-top{
+            p{
+                color: white;
+                font-size: 60px;
+            }
+        }
+        .add-bottom{
+            padding-top: 90px;
+            input{
+                background-color: transparent;
+                color: white;
+                opacity:70%;
+                border-right: none;
+                font-size: 30px;
+            }
+            ::placeholder{
+            }
+        }
+    }
+}
