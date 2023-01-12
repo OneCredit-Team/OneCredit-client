@@ -43,21 +43,21 @@ export default function GraphPage() {
           </div>
           <div className="percent-tit-right">
             <div className="percent-right-img">
-            {
-              PlacepercentData.percent < 21 ?
-                <img src="/img/verygood.svg" />
-                :
-                PlacepercentData.percent > 20 && PlacepercentData.percent < 41 ?
-                  <img src="/img/good.svg" />
+              {
+                PlacepercentData.percent < 21 ?
+                  <img src="/img/verygood.svg" />
                   :
-                  PlacepercentData.percent > 40 && PlacepercentData.percent < 61 ?
-                    <img src="/img/so-so.svg" />
+                  PlacepercentData.percent > 20 && PlacepercentData.percent < 41 ?
+                    <img src="/img/good.svg" />
                     :
-                    PlacepercentData.percent > 60 && PlacepercentData.percent < 81 ?
-                      <img src="/img/bad.svg" />
+                    PlacepercentData.percent > 40 && PlacepercentData.percent < 61 ?
+                      <img src="/img/so-so.svg" />
                       :
-                      <img src="/img/verybad.svg" />
-            }
+                      PlacepercentData.percent > 60 && PlacepercentData.percent < 81 ?
+                        <img src="/img/bad.svg" />
+                        :
+                        <img src="/img/verybad.svg" />
+              }
             </div>
           </div>
         </div>
