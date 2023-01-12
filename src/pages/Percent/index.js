@@ -74,6 +74,12 @@ export default function GraphPage() {
             </div>
           </div>
         </div>
+        {/* arrow */}
+        <div className="arrow-box">
+          <button className="arrow-btn">
+            <img src="/img/arrow.svg" className="arrow-img" />
+          </button>
+        </div>
       </div>
       <GraphResult />
     </>
