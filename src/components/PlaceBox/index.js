@@ -1,5 +1,6 @@
 import './style.scss';
 import PlaceData from "./place.json";
+import { Link } from 'react-router-dom';
 export default function PlaceBox(){
     return(
         <>
@@ -13,7 +14,9 @@ export default function PlaceBox(){
                         ))
                     }
                     <p className='place-name-div'>
-                        <p className='place-name'>+</p>
+                        <Link to='/addplace'>
+                            <p className='place-name'>+</p>
+                        </Link>
                     </p>
                 </div>
             </div>

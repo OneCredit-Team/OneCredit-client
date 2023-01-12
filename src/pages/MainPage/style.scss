@@ -1,0 +1,42 @@
+.main-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 0rem 12rem;
+    .main-content {
+        .main-tit {
+            color: #F5F3FD;
+            font-family: 'PretendardSemiBold';
+            font-size: 65px;
+        }
+        .sub-tit {
+            font-size: 19px;
+            font-family: "PretendardMedium";
+            color: #fff;
+            opacity: 60%;
+            font-weight: 100;
+            line-height: 145%;
+            margin: 80px 0px;
+            position: relative;
+            bottom: 15px;
+        }
+        .main-btn {
+            width: 263px;
+            height: 88px;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            font-size: 25px;
+            color: #fff;
+            line-height: 100%;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+    img {
+        width: 30vw;
+    }
+}
